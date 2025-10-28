@@ -1,0 +1,141 @@
+/* Custom styles for DH Parameters Educational Tool */
+
+/* Tab styles */
+.tab-button.active {
+    background-color: #2d3748;
+    border-bottom: 2px solid #4299e1;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d3748;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #718096;
+}
+
+/* Animation for parameter highlights */
+@keyframes highlight {
+    0% { background-color: rgba(66, 153, 225, 0.3); }
+    100% { background-color: transparent; }
+}
+
+.highlight {
+    animation: highlight 1.5s ease-in-out;
+}
+
+/* Custom styles for the visualization container */
+#visualization-container {
+    position: relative;
+}
+
+#step-instruction {
+    z-index: 10;
+}
+
+/* Drop zone styles for quiz */
+.drop-zone {
+    transition: all 0.2s ease;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.drop-zone.hover {
+    background-color: #4a5568;
+    border: 2px dashed #4299e1;
+}
+
+/* Matrix display styles */
+.matrix-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.matrix-cell {
+    flex: 1;
+    text-align: center;
+    padding: 2px 4px;
+}
+
+/* Joint type indicators */
+.joint-revolute {
+    background-color: rgba(49, 130, 206, 0.2);
+}
+
+.joint-prismatic {
+    background-color: rgba(229, 62, 62, 0.2);
+}
+
+/* Parameter color coding */
+.param-a {
+    color: #ed8936;
+}
+
+.param-alpha {
+    color: #9f7aea;
+}
+
+.param-d {
+    color: #38b2ac;
+}
+
+.param-theta {
+    color: #4299e1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    #visualization-container {
+        height: 300px;
+    }
+    
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print styles */
+@media print {
+    .bg-gray-800, .bg-gray-900, .bg-gray-700 {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .text-white, .text-gray-300 {
+        color: black !important;
+    }
+    
+    .border-gray-600, .border-gray-700 {
+        border-color: black !important;
+    }
+    
+    button, .tab-button, #play-btn, #pause-btn, #reset-btn, #add-joint, #remove-joint {
+        display: none !important;
+    }
+}
