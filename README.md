@@ -7,8 +7,10 @@ Dynamic Input: (I'm assuming you have input fields) Easily input and modify the 
 Real-time Updates: The visualization updates in real-time as you change the parameters.
 Simple & Lightweight: No backend required. Runs entirely in your browser.
 (You can add or remove features from this list based on your project's capabilities.)
+
 🛠️ How to Use
 Since this is a client-side project built with HTML, CSS, and JavaScript, you can run it locally without any complex setup.
+
 Clone the repository:
 Bash
 git clone https://github.com/DeveshBhagwani/DH_visualizer.git
