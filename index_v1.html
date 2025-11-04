@@ -62,45 +62,37 @@
                 </div>
 
                 <div class="mb-6">
-                    <h2 class="text-xl font-semibold mb-4 text-blue-300">Display Options</h2>
-                    
+                    <h2 class="text-xl font-semibold mb-4 text-blue-300">Display Options</h2>                    
                     <div class="space-y-2">
                         <div class="flex items-center">
                             <input type="checkbox" id="show-frames" class="mr-2" checked>
                             <label for="show-frames">Show Coordinate Frames</label>
-                        </div>
-                        
+                        </div>                        
                         <div class="flex items-center">
                             <input type="checkbox" id="show-labels" class="mr-2" checked>
                             <label for="show-labels">Show Parameter Labels</label>
-                        </div>
-                        
+                        </div>                        
                         <div class="flex items-center">
                             <input type="checkbox" id="show-robot" class="mr-2" checked>
                             <label for="show-robot">Show Robot Geometry</label>
-                        </div>
-                        
+                        </div>                        
                         <div class="flex items-center">
                             <input type="checkbox" id="show-common-normal" class="mr-2">
                             <label for="show-common-normal">Show Common Normals</label>
                         </div>
                     </div>
                 </div>
-
                 <div class="mb-6">
-                    <h2 class="text-xl font-semibold mb-4 text-blue-300">Animation Controls</h2>
-                    
+                    <h2 class="text-xl font-semibold mb-4 text-blue-300">Animation Controls</h2>                    
                     <div class="flex space-x-2 mb-4">
                         <button id="play-btn" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded">Play</button>
                         <button id="pause-btn" class="flex-1 bg-yellow-600 hover:bg-yellow-700 text-white py-2 rounded">Pause</button>
                         <button id="reset-btn" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 rounded">Reset</button>
-                    </div>
-                    
+                    </div>                    
                     <div class="mb-4">
                         <label class="block text-sm font-medium mb-2">Animation Speed</label>
                         <input type="range" id="speed-slider" min="1" max="10" value="5" class="w-full">
-                    </div>
-                    
+                    </div>                    
                     <div class="mb-4">
                         <label class="block text-sm font-medium mb-2">Explainer Mode</label>
                         <select id="explainer-mode" class="w-full bg-gray-700 border border-gray-600 rounded px-3 py-2 text-white">
@@ -286,6 +278,7 @@
                 </div>
                 
                 <pre id="code-block" class="bg-gray-900 p-4 rounded text-sm overflow-auto max-h-80">
+                    
 function dhToTransform(a, alpha, d, theta) {
     const cosTheta = Math.cos(theta);
     const sinTheta = Math.sin(theta);
@@ -363,4 +356,5 @@ function multiplyMatrices(a, b) {
 
     <script src="script_v1.js"></script>
 </body>
+
 </html>
